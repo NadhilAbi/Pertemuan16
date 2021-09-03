@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3 New Plugin</title>
+        <link href="jquery-ui.css" rel="stylesheet">
+	<style>
+	body{
+		font-family: "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	</style>
+    </head>
+    
+    <body>
+    	<center>
+	<h1>Tugas Desain Web</h1>
+	</center>
+        <h1>Nadhil Abi(3201916132)</h1>
+        <h2 class="demoHeaders">Nama</h2>
+        <div>
+	    <input id="autocomplete" title="type &quot;a&quot;">
+        </div>
+
+        <h2 class="demoHeaders">Tanggal Lahir</h2>
+        <div id="datepicker"></div>
+
+
+        <h2 class="demoHeaders">Gender</h2>
+        <form style="margin-top: 1em;">
+        <div id="radioset">
+		<input type="radio" id="radio1" name="radio"><label for="radio1">Pria</label>
+		<input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Wanita</label></div></form>
+
+
+        <h2 class="demoHeaders">Submit</h2>
+        <button id="button">Simpan</button>
+        <button id="button-icon">An icon-only button</button>
+
+        <hr>
+	<h2 class="demoHeaders">Sinopsis Film The Gangster The Cop And The Devil</h2>
+<div style="position: relative; width: 96%; height: 200px; padding:1% 2%; overflow:hidden;" class="fakewindowcontain">
+	<p>The Gangster, The Cop, The Devil is a crime action film about two men who work together to find a serial killer. </p><p>The man named Jang Dong-soo "The Gangster" (Ma Dong-seok) is a big gang boss, mafia and a thug who is not afraid of anyone. </p><p>Jang Dong-soo coincidentally encounters a serial killer named Kang Kyung-Ho “The Devil” (Kim Sung-Kyu). Kang Kyung-Ho "The Devil" tried to kill Jang Dong-soo by stabbing him several times.</p><p>However, Jang Dong-soo who was too strong made Kang Kyung-Ho fail to kill him. Having failed, Kang Kyung-hoo then fled the scene. Meanwhile, Jang Dong-soo who survived was eventually hospitalized and was rescued. </p><p>Due to the incident, Jang Dong-soo held a grudge and anger towards the man who tried to kill him. </p><p>Meanwhile, another man named Detective Jung Tae-seok "The Cop" (Kim Moo-yul) connects the dots of several recent murder cases and finds out that Jang Dong-soo is also a victim of The Devil. Detective Jung Tae-seok finally meets and persuades Jang Dong-soo to partner in finding serial killer Kyang Kyung-ho. Jang Dong-su has to work with Detective Jung Tae-seok, two different backgrounds, one criminal and the other a police officer. </p><p>However, various investigations were carried out with no results, both the police and the gang leader even though they had the same mission. How will the story continue? Can Jang Dong-su and Jung Tae-seok be able to find this mysterious figure? Who exactly is the figure of the mysterious serial killer?</p>p
+
+	<!-- ui-dialog -->
+	<div class="ui-widget-overlay ui-front"></div>
+	<div style="position: absolute; width: 320px; left: 50px; top: 30px; padding: 1.2em" class="ui-widget ui-front ui-widget-content ui-corner-all ui-widget-shadow">
+		Film The Gangster, The Cop, The Devil telah tayang perdana di bioskop Indonesia pada Kamis 23 Mei 2019.
+        Sinopsis film The Gangster, The Cop, The Devil ini bisa kamu baca terlebih dahulu sebelum menyaksikan filmnya.
+        Film The Gangster, The Cop, The Devil merupakan film action asal Korea Selatan.
+        Film The Gangster, The Cop, The Devil Dibintangi oleh Jang Dong Su(Ma Dong Seok), Jung Tae Seok(Kim Moo Yul), Kang Kyung Ho(Kim Sung Kyu).
+	</div>
+
+</div>
+
+<!-- ui-dialog -->
+<div id="dialog" title="Dialog Title">
+	<p>Film ini disutradarai oleh Won-Tae Lee. Sang Sutradara memberikan tiga karakter pada judul lantaran dari plot ceritanya film ini melibatkan tiga karakter kunci yang akan saling menghabisi. Film Ini Merupakan Film Aksi Kriminalitas Seorang Pembunuh Berantai Yang Di Buru Oleh Polisi dan Ketua Gangster. The Gangster, The Cop, The Devil ini Menyajikan Aksi dan Pembunuhan Yang Memasuki dalam Kategori Film Thriller. Menunjukan kepada Penonton bagaimana aksi seorang Mafia Gangster yang di Pandang Jahat Bekerja Sama Dengan Polisi Untuk Menangkap Penjahat Yang Sesungguhnya Yaitu Pembunuh Berantai Yang Juga Mengincar Mafia Gangster. </p>
+</div>
+
+
+	<!-- Autocomplete -->
+	<h2 class="demoHeaders">Judul Film</h2>
+	<div>
+		<input id="autocomplete" title="type &quot;a&quot;">
+	</div>
+
+	
+
+	<!-- Progressbar -->
+
+		<h2 class="demoHeaders">Genre</h2>
+<select id="selectmenu">
+		<option>Horror</option>
+		<option>Mistery</option>
+		<option>Fantasi</option>
+		<option>Thriller</option>
+		<option>Romance</option>
+		<option selected="selected">Romance</option>
+
+
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.js"></script>
+
+        <script>
+            var availableTags = [
+                "Amantubillah",
+                "Bagus",
+                "Carera",
+                "Dimas",
+                "Edgar",
+                "Fajar",
+                "Gilang",
+                "Haikal",
+                "Imam",
+                "Jimmy",
+                "Kemal",
+                "Lapis",
+                "Misery",
+                "Nadhil",
+                "Ojan",
+                "Prilly",
+                "Qia",
+                "Rhein",
+                "Siska",
+                "Tiur",
+                "Umar",
+                "Via",
+                "Wendy",
+                "Xiao",
+                "Yulius",
+                "Zulfan"
+            ];
+            $( "#autocomplete" ).autocomplete({
+	            source: availableTags
+            });
+
+            $( "#datepicker" ).datepicker({
+	        inline: true
+            });
+
+            $("#radioset").buttonset();
+
+            $( "#button" ).button();
+            $( "#button-icon" ).button({
+	            icon: "ui-icon-gear",
+	            showLabel: false
+                });
+
+
+        </script>
+
+
+    </body>
+</html>
